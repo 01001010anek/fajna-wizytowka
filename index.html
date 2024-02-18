@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wizytówka</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('tlo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-align: center;
+  }
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #d9d6cf; /* jasny beż */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    animation: frameWave 2s infinite alternate;
+  }
+  @keyframes frameWave {
+    0% { transform: rotate(-3deg); }
+    100% { transform: rotate(3deg); }
+  }
+  .info {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    color: #ffffff; /* biały */
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff; /* biały */
+  }
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .social-links img {
+    max-width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .social-links img:hover {
+    transform: scale(1.2);
+  }
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div class="profile">
+    <img class="profile-pic" src="kotek.jpg" alt="Twoje Imię i Nazwisko">
+  </div>
+  <div class="info">
+    <h1>Imię Nazwisko</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra leo eget rhoncus convallis. In fringilla justo vitae eleifend euismod. Etiam lobortis et nisi at pulvinar. In quis tellus luctus.</p>
+    <div class="social-links">
+      <a href="#"><img src="social/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="social/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="social/linkedin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="social/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="social/github.png" alt="GitHub"></a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
